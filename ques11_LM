@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int quantity;
+    float price, total, discount = 0, final_amount;
+
+    cout << "Enter quantity of items: ";
+    cin >> quantity;
+
+    cout << "Enter price per item: ";
+    cin >> price;
+
+    total = quantity * price;
+
+    if(quantity > 1000) {
+        discount = 0.10 * total;
+    }
+
+    final_amount = total - discount;
+
+    cout << "Total Expense = " << total << endl;
+    cout << "Discount = " << discount << endl;
+    cout << "Final Amount = " << final_amount << endl;
+
+    return 0;
+}
