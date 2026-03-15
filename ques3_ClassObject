@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+    int length, breadth;
+
+public:
+    // Constructor
+    Rectangle(int l, int b) {
+        length = l;
+        breadth = b;
+    }
+
+    // Function to calculate area
+    void area() {
+        cout << "Area of Rectangle = " << length * breadth << endl;
+    }
+};
+
+int main() {
+    Rectangle r1(10, 5);   // object created
+
+    r1.area();
+
+    return 0;
+}
