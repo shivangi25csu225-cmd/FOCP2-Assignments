@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+    string name;
+    int marks;
+
+public:
+    // Constructor
+    Student(string n, int m) {
+        name = n;
+        marks = m;
+    }
+
+    // Member function to display details
+    void display() {
+        cout << "Name: " << name << endl;
+        cout << "Marks: " << marks << endl;
+    }
+};
+
+int main() {
+    Student s1("Rahul", 85);   // constructor called automatically
+    s1.display();
+
+    return 0;
+}
