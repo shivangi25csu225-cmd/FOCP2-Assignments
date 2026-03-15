@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class Car {
+    string brand;
+    float price;
+
+public:
+    // Constructor
+    Car(string b, float p) {
+        brand = b;
+        price = p;
+    }
+
+    // Function to display details
+    void display() {
+        cout << "Brand: " << brand << endl;
+        cout << "Price: " << price << endl;
+    }
+};
+
+int main() {
+    Car c1("Toyota", 2000000);
+    Car c2("Honda", 1800000);
+
+    cout << "Car 1 Details:" << endl;
+    c1.display();
+
+    cout << "\nCar 2 Details:" << endl;
+    c2.display();
+
+    return 0;
+}
