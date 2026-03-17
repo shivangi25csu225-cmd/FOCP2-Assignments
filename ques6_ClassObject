@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class BankAccount {
+    int acc_no;
+    float balance;
+
+public:
+    // Constructor
+    BankAccount(int a, float b) {
+        acc_no = a;
+        balance = b;
+    }
+
+    // Function to display details
+    void display() {
+        cout << "Account Number: " << acc_no << endl;
+        cout << "Balance: " << balance << endl;
+    }
+};
+
+int main() {
+    BankAccount b1(12345, 10000);   // object created
+
+    b1.display();
+
+    return 0;
+}
