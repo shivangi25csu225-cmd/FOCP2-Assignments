@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+class ElectricityBill {
+    float unit, rate, fixedPrice;
+
+public:
+    void calculateBill(int u) {
+        unit = u;
+        cout << "Bill = " << unit * 5 << endl;
+    }
+
+    void calculateBill(int u, float r) {
+        unit = u;
+        rate = r;
+        cout << "Bill = " << unit * rate << endl;
+    }
+
+    void calculateBill(int u, float r, float f) {
+        unit = u;
+        rate = r;
+        fixedPrice = f;
+        cout << "Bill = " << (unit * rate + fixedPrice) << endl;
+    }
+};
+
+int main() {
+    ElectricityBill e;
+    e.calculateBill(100);
+    e.calculateBill(100, 6.5);
+    e.calculateBill(100, 6.5, 50);
+
+    return 0;
+}
