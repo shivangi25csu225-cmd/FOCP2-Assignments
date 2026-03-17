@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+// Volume of cube
+float volume(float side) {
+    return side * side * side;
+}
+
+// Volume of cuboid
+float volume(float l, float b, float h) {
+    return l * b * h;
+}
+
+// Volume of cylinder
+float volume(float r, float h) {
+    return 3.14 * r * r * h;
+}
+
+int main() {
+    cout << "Volume of Cube = " << volume(3) << endl;
+    cout << "Volume of Cuboid = " << volume(2, 3, 4) << endl;
+    cout << "Volume of Cylinder = " << volume(2, 5) << endl;
+
+    return 0;
+}
