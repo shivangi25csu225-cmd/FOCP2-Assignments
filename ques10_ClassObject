@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+class Product {
+    string name;
+    float price;
+    int quantity;
+
+public:
+    // Constructor
+    Product(string n, float p, int q) {
+        name = n;
+        price = p;
+        quantity = q;
+    }
+
+    // Function to calculate total cost
+    void totalCost() {
+        cout << "Product: " << name << endl;
+        cout << "Total Cost = " << price * quantity << endl;
+    }
+
+    // Destructor
+    ~Product() {
+        cout << "Product removed from memory: " << name << endl;
+    }
+};
+
+int main() {
+    Product p1("Laptop", 50000, 1);
+    Product p2("Headphones", 2000, 2);
+
+    p1.totalCost();
+    p2.totalCost();
+
+    return 0;
+}
